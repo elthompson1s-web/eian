@@ -5,7 +5,9 @@ int multiply(int number1, int number2) {
 } 
 
 
-int main() {  
+ int main() {  
+    std::cout << "whats your first number?"
+    std::cin >> number1;
     int number1;
     int number2;
     int number3;
