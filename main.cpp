@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
-#include <cmath>
+#include <cmath> 
 
+//operators for the calc
 int divide(int number1, int number2) {
     return number1 / number2;
 }
@@ -19,6 +20,7 @@ int multiply(int number1, int number2) {
 }
 
 int main() {
+   //password and restarts you wether you get the pass wrong or right
     const std::string correctpass = "5219";
     std::string input;
 
@@ -36,14 +38,13 @@ int main() {
     do {
         int number1, number2, result;
         char op;
-
-        std::cout << "What's your first number? ";
+//the question/outputs 
+        std::cout << "what is the question ";
         std::cin >> number1;
 
-        std::cout << "What's your operator (+, -, *, /)? ";
         std::cin >> op;
 
-        std::cout << "What's your second number? ";
+
         std::cin >> number2;
 
         switch(op) {
@@ -67,10 +68,10 @@ int main() {
                 std::cout << "Invalid operator!\n";
                 continue;
         }
-
+//result for the calc
         std::cout << "Result: " << result << "\n";
 
-        std::cout << "Wanna restart? (y/n): ";
+        std::cout << "do you want to restart? (y/n): ";
         std::cin >> choice;
 
     } while (choice == 'y' || choice == 'Y');
