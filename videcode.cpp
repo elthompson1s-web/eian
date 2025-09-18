@@ -253,4 +253,5 @@ Fraction evaluateRPN(std::queue<Token> rpnQueue) {
                 Fraction left = stack.top(); stack.pop();
 
                 if (token.value == "+") {
-                    stack.push(left + right
+                    stack.push(left + right);}
+        
